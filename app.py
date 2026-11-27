@@ -5,6 +5,8 @@ import streamlit as st
 
 st.set_page_config(page_title="KaynakCoPro V1.0 (DEMO)", page_icon="🔧", layout="wide")
 
+import sayfa_birlesim
+import sayfa_kullanici
 import sayfa_personel
 import sayfa_proje
 import sayfa_prosedur
@@ -14,9 +16,11 @@ from ortak import ROL_ADI, giris_ekrani, sb
 # Menüye yeni sayfa eklemek için buraya bir satır eklenir.
 SAYFALAR = {
     "Projeler": sayfa_proje.ekran,
-    "Personel ve belgeler": sayfa_personel.ekran,
-    "WPQR": sayfa_wpqr.ekran,
+    "Birleşimler": sayfa_birlesim.ekran,
     "Prosedürler (pWPS/WPS)": sayfa_prosedur.ekran,
+    "WPQR": sayfa_wpqr.ekran,
+    "Personel ve belgeler": sayfa_personel.ekran,
+    "Kullanıcılar": sayfa_kullanici.ekran,
 }
 
 
